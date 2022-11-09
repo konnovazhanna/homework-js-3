@@ -37,3 +37,22 @@ if (t < -30) {
 } else {
     console.log("Пекло");
 }
+
+// Задача 3
+// С помощью конструкции switch и переменной, хранящей роль пользователя
+// (admin, manager, user …), выводить на экран информацию о пользователе
+// (информацию любого типа, роль, дату рождения, любимый напиток и тд).
+
+let userType = 'user'; // manager, user
+
+switch (userType) {
+    case 'admin':
+        console.log("Администратор")
+        break;
+    case 'manager':
+        console.log("Менеджер")
+        break;
+    case 'user':
+        console.log('Пользователь')
+        break;
+}
