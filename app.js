@@ -23,19 +23,19 @@ console.log(result);
 let t = +50;
 
 if (t < -30) {
-    console.log("Оставайтесь дома!");
+  console.log("Оставайтесь дома!");
 } else if (t >= -30 && t <= -10) {
-    console.log("Сегодня холодно")
+  console.log("Сегодня холодно");
 } else if (t > -10 && t <= +5) {
-    console.log("Не холодно");
+  console.log("Не холодно");
 } else if (t > +5 && t <= +15) {
-    console.log("Тепло");
+  console.log("Тепло");
 } else if (t > +15 && t <= +25) {
-    console.log("Очень тепло");
+  console.log("Очень тепло");
 } else if (t > +25 && t <= +35) {
-    console.log("Жарко");
+  console.log("Жарко");
 } else {
-    console.log("Пекло");
+  console.log("Пекло");
 }
 
 // Задача 3
@@ -43,16 +43,25 @@ if (t < -30) {
 // (admin, manager, user …), выводить на экран информацию о пользователе
 // (информацию любого типа, роль, дату рождения, любимый напиток и тд).
 
-let userType = 'user'; // manager, user
+let userType = "user"; // manager, user
 
 switch (userType) {
-    case 'admin':
-        console.log("Администратор")
-        break;
-    case 'manager':
-        console.log("Менеджер")
-        break;
-    case 'user':
-        console.log('Пользователь')
-        break;
+  case "admin":
+    console.log("Администратор");
+    break;
+  case "manager":
+    console.log("Менеджер");
+    break;
+  case "user":
+    console.log("Пользователь");
+    break;
 }
+
+// Задача 4
+
+let result1 = null || 0 || "" || undefined; // undefined
+let result2 = "яблоко" && true && null && 1; // null
+let result3 = 0 || true && "false" || null; // false
+let result4 = 0 && true || "false" && null; // null
+let result5 = !0 && !!1; // true
+let result6 = !(null || !"апельсин" && true); // true
