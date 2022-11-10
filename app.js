@@ -59,9 +59,35 @@ switch (userType) {
 
 // Задача 4
 
-let result1 = null || 0 || "" || undefined; // undefined
-let result2 = "яблоко" && true && null && 1; // null
+let result1 = null || 0 || "" || undefined; // undefined если все значения false, то возвращается значение последнего операнда.
+let result2 = "яблоко" && true && null && 1; // null 
 let result3 = 0 || true && "false" || null; // false
 let result4 = 0 && true || "false" && null; // null
 let result5 = !0 && !!1; // true
 let result6 = !(null || !"апельсин" && true); // true
+
+// Задача 5
+// Вывести в консоль заданную строку N раз.
+
+// в строку
+
+let i = 0;
+const lastNumber = 10;
+let message = "";
+
+while (++i <= lastNumber) {
+  message += `message `;
+}
+
+console.log(message);
+
+// в столбик
+
+let p = 0;
+const lastOrder = 10;
+let links = "message";
+
+while (++p <= lastOrder) {
+  console.log(links);
+}
+
