@@ -97,16 +97,16 @@
 // станет меньше M, если известно, что в первый день продаж всего было N
 // автомобилей.
 
-let n = 1000; // в первый день продаж
-let m = 100;
-let dayCount = 0;
+// let n = 1000; // в первый день продаж
+// let m = 100;
+// let dayCount = 0;
 
-while (n > m) {
-  n = n / 2;
-  dayCount++;
-}
+// while (n > m) {
+//   n = n / 2;
+//   dayCount++;
+// }
 
-console.log(dayCount);
+// console.log(dayCount);
 
 // Задача 7
 // Проанализировав временной промежуток начиная с 1800 и до 2020 года найти
@@ -391,20 +391,18 @@ console.log(dayCount);
 
 // Выведите столбец четных чисел в промежутке от 0 до 100.
 
-// let i = 0;
-// const lastNumber = 100;
-
-// while (i <= lastNumber) {
-//   if (i % 2 === 0) {
-//     console.log(i++);
-//   }
-// }
+for (var i = 0; i <= 100; i++) {
+  if(i % 2 == 0) {
+	document.write(i + '<br>');
+  }
+}
 
 // С помощью цикла найдите сумму чисел от 1 до 100.
 
 // let sum = 0;
 
-// for (var i = 1; i <= 100; i++) {
-//   sum += i;
+// for (let i = 1; i <= 100; i++) {
+// 	sum += i;
 // }
-// console.log(i);
+
+// console.log(sum);
