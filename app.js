@@ -20,42 +20,42 @@
 // ○ от +25 до +35: “Жарко”;
 // ○ выше либо равно +35: “Пекло!”;
 
-let t = +50;
+// let t = +50;
 
-if (t < -30) {
-  console.log("Оставайтесь дома!");
-} else if (t >= -30 && t <= -10) {
-  console.log("Сегодня холодно");
-} else if (t > -10 && t <= +5) {
-  console.log("Не холодно");
-} else if (t > +5 && t <= +15) {
-  console.log("Тепло");
-} else if (t > +15 && t <= +25) {
-  console.log("Очень тепло");
-} else if (t > +25 && t <= +35) {
-  console.log("Жарко");
-} else {
-  console.log("Пекло");
-}
+// if (t < -30) {
+//   console.log("Оставайтесь дома!");
+// } else if (t >= -30 && t <= -10) {
+//   console.log("Сегодня холодно");
+// } else if (t > -10 && t <= +5) {
+//   console.log("Не холодно");
+// } else if (t > +5 && t <= +15) {
+//   console.log("Тепло");
+// } else if (t > +15 && t <= +25) {
+//   console.log("Очень тепло");
+// } else if (t > +25 && t <= +35) {
+//   console.log("Жарко");
+// } else {
+//   console.log("Пекло");
+// }
 
 // Задача 3
 // С помощью конструкции switch и переменной, хранящей роль пользователя
 // (admin, manager, user …), выводить на экран информацию о пользователе
 // (информацию любого типа, роль, дату рождения, любимый напиток и тд).
 
-let userType = "user"; // manager, user
+// let userType = "user"; // manager, user
 
-switch (userType) {
-  case "admin":
-    console.log("Администратор");
-    break;
-  case "manager":
-    console.log("Менеджер");
-    break;
-  case "user":
-    console.log("Пользователь");
-    break;
-}
+// switch (userType) {
+//   case "admin":
+//     console.log("Администратор");
+//     break;
+//   case "manager":
+//     console.log("Менеджер");
+//     break;
+//   case "user":
+//     console.log("Пользователь");
+//     break;
+// }
 
 // Задача 4
 
@@ -71,25 +71,25 @@ switch (userType) {
 
 // в строку
 
-let i = 0;
-const lastNumber = 10;
-let message = "";
+// let i = 0;
+// const lastNumber = 10;
+// let message = "";
 
-while (++i <= lastNumber) {
-  message += `message `;
-}
+// while (++i <= lastNumber) {
+//   message += `message `;
+// }
 
-console.log(message);
+// console.log(message);
 
 // в столбик
 
-let p = 0;
-const lastOrder = 10;
-let links = "message";
+// let p = 0;
+// const lastOrder = 10;
+// let links = "message";
 
-while (++p <= lastOrder) {
-  console.log(links);
-}
+// while (++p <= lastOrder) {
+//   console.log(links);
+// }
 
 // Задача 6
 // Ежедневно количество доступных автомобилей в салоне уменьшается в два
@@ -97,16 +97,16 @@ while (++p <= lastOrder) {
 // станет меньше M, если известно, что в первый день продаж всего было N
 // автомобилей.
 
-let n = 1000; // количество автомобилей в первый день продаж
-let m = 100; // количество доступных к покупке авто
-let j = 1; // счетчик дней
+// let n = 1000; // количество автомобилей в первый день продаж
+// let m = 100; // количество доступных к покупке авто
+// let j = 1; // счетчик дней
 
-do {
-  n = Math.trunc(n / 2);
-  j++;
-} while (n > m);
-console.log("Осталось автомобилей:", n);
-console.log("На", j, "день");
+// do {
+//   n = Math.trunc(n / 2);
+//   j++;
+// } while (n > m);
+// console.log("Осталось автомобилей:", n);
+// console.log("На", j, "день");
 
 // Задача 7
 // Проанализировав временной промежуток начиная с 1800 и до 2020 года найти
@@ -115,22 +115,22 @@ console.log("На", j, "день");
 // ○ Количество високосных годов принадлежащих данному отрезку и количество итераций которое
 // потребовалось для поиска.
 
-let y1 = 1800;
-let y2 = 2020;
-const spaceY = 1961;
-let k = 0;
-let k1 = 0;
+// let y1 = 1800;
+// let y2 = 2020;
+// const spaceY = 1961;
+// let k = 0;
+// let k1 = 0;
 
-while (y1 < y2) {
-  y1++;
-  k++;
-  if (y1 == spaceY) console.log(y1, "через", k, "лет");
-  if (y1 % 4 === 0) {
-    k1++;
-  }
-}
+// while (y1 < y2) {
+//   y1++;
+//   k++;
+//   if (y1 == spaceY) console.log(y1, "через", k, "лет");
+//   if (y1 % 4 === 0) {
+//     k1++;
+//   }
+// }
 
-console.log("За", k, "лет", k1, "високосных года");
+// console.log("За", k, "лет", k1, "високосных года");
 
 // Работа с if-else
 
@@ -279,22 +279,92 @@ console.log("За", k, "лет", k1, "високосных года");
 // На switch-case
 // Переменная num может принимать 4 значения: 1, 2, 3 или 4. Если она имеет значение '1', то в переменную result запишем 'зима', если имеет значение '2' – 'весна' и так далее. Решите задачу через switch-case.
 
-const num = 3;
+// const num = 3;
 
-switch (num) {
-  case 1:
-    console.log('Зима')
-    break;
-  case 2:
-    console.log('Весна')
-    break;
-  case 3:
-  console.log('Лето')
-  break;
-  case 4:
-  console.log('Осень')
-  break;
-  default:
-  console.log('')
-  break;
+// switch (num) {
+//   case 1:
+//     console.log('Зима')
+//     break;
+//   case 2:
+//     console.log('Весна')
+//     break;
+//   case 3:
+//   console.log('Лето')
+//   break;
+//   case 4:
+//   console.log('Осень')
+//   break;
+//   default:
+//   console.log('')
+//   break;
+// }
+
+// Общие задачи
+// В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
+
+// let day = 11;
+
+// if (day >= 1 && day <= 10) {
+//   console.log('Первая декада месяца'); 
+// } else if (day > 10 && day <= 20) {
+//   console.log('Вторая декада месяца');
+// } else if (day > 20 && day <= 31) {
+//   console.log('Третья декада месяца');
+// } else {
+//   console.log('');
+// }
+
+// В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую пору года попадает этот месяц (зима, лето, весна, осень).
+
+// let month = 6;
+
+// if (month <= 2 && month >= 1) {
+//   console.log('Зима'); 
+// } else if (month == 12) {
+//   console.log('Зима'); 
+// } else if (month >= 3 && month <= 5) {
+//   console.log('Весна');
+// } else if (month >= 6 && month <= 8) {
+//   console.log('Лето');
+// } else if (month >= 9 && month <= 11) {
+//   console.log('Осень');
+// } else {
+//   console.log('');
+// }
+
+// Дана строка, состоящая из символов, например, 'abcde'. 
+// Проверьте, что первым символом этой строки является буква 'a'. 
+// Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+// let string = 'abcd';
+// if (string[0] == 'a') {
+// console.log('Да')
+// } else {
+// console.log('Нет')
+// }
+
+// Дана строка с цифрами, например, '12345'. Проверьте, что первым символом этой строки является цифра 1, 2 или 3. Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+// let string = '12345';
+// if (string[0] == '1') {
+// console.log('Да')
+// } else {
+// console.log('Нет')
+// }
+
+// Дана строка из 3-х цифр. Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.
+
+// let str = '123';
+
+// console.log((+str[0]) + (+str[1]) + (+str[2]));
+
+// Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. Если это так - выведите 'да', 
+// в противном случае выведите 'нет'.
+
+let str = '123123'; 
+
+if (((+str[0]) + (+str[1]) + (+str[2])) == ((+str[3]) + (+str[4]) + (+str[5]))) {
+  console.log('Да');
+} else {
+  console.log('Нет');
 }
